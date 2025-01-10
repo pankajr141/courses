@@ -14,21 +14,26 @@ Below link contains the location where all model build using this repo are store
 
 * [Unit 1 - Introduction to Deep Reinforcement Learning](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit1/unit1.ipynb) \
 Initial Unit to interact with gymnasium env ang train a PPO model using stablebaseline3
-> <b>Env -</b> [LunarLander-v2](https://gymnasium.farama.org/environments/box2d/lunar_lander/) [gymnasium] \
-> <b>Lib -</b> [stable_baselines3](https://stable-baselines3.readthedocs.io/en/master/index.html) \
-> <b>Algo -</b> [PPO](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html)
+> <b>Env -</b> [LunarLander-v2](https://gymnasium.farama.org/environments/box2d/lunar_lander/) \
+> <b>Env-Lib -</b> [gymnasium](https://gymnasium.farama.org/) \
+> <b>RL-Algo -</b> [PPO](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html) \
+> <b>RL-Lib -</b> [stable_baselines3](https://stable-baselines3.readthedocs.io/en/master/index.html)
 
 * [Unit 1 Bonus - Introduction to Deep Reinforcement Learning with Huggy](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit1_bonus.ipynb) \
 Bonus unit where we interact with Unity based Env and train RL model using PPO
-> <b>Env -</b> [Huggy](https://github.com/huggingface/Huggy) [Unity] \
-> <b>Lib -</b> [MLAgents](https://github.com/Unity-Technologies/ml-agents) \
-> <b>Algo -</b> PPO
+> <b>Env -</b> [Huggy](https://github.com/huggingface/Huggy) \
+> <b>Env-Lib -</b> Unity \
+> <b>RL-Algo -</b> PPO \
+> <b>RL-Lib -</b> [MLAgents](https://github.com/Unity-Technologies/ml-agents)
 
-* [Unit 1 - Introduction to Q Learning](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit1/unit1.ipynb) \
+* [Unit 2 - Introduction to Q Learning](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit2.ipynb) \
 Trains a Q-function, an action-value function encoded, in internal memory, by a Q-table containing all the state-action pair values.
-Given a state and action, our Q-function will search its Q-table for the corresponding value.
 <pre>
 <b>Value-based method:</b> finds the optimal policy indirectly by training a value or action-value function that will tell us the value of each state or each state-action pair.
 <b>TD approach:</b> updates its action-value function at each step instead of at the end of the episode.'
 <b>Off-policy:</b> using a different policy for acting (inference) and updating (training).
 </pre>
+> <b>Env -</b> [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) & [Taxi-v3](https://gymnasium.farama.org/environments/toy_text/taxi/) [gymnasium] \
+> <b>Env-Lib -</b> [gymnasium](https://gymnasium.farama.org/) \
+> <b>RL-Algo -</b> Q-Learning \
+> <b>RL-Lib -</b> python and numpy
