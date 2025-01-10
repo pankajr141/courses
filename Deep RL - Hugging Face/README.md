@@ -23,3 +23,12 @@ Bonus unit where we interact with Unity based Env and train RL model using PPO
 > <b>Env -</b> [Huggy](https://github.com/huggingface/Huggy) [Unity] \
 > <b>Lib -</b> [MLAgents](https://github.com/Unity-Technologies/ml-agents) \
 > <b>Algo -</b> PPO
+
+* [Unit 1 - Introduction to Q Learning](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit1/unit1.ipynb) \
+Trains a Q-function, an action-value function encoded, in internal memory, by a Q-table containing all the state-action pair values.
+Given a state and action, our Q-function will search its Q-table for the corresponding value.
+<pre>
+<b>Value-based method:</b> finds the optimal policy indirectly by training a value or action-value function that will tell us the value of each state or each state-action pair.
+<b>TD approach:</b> updates its action-value function at each step instead of at the end of the episode.'
+<b>Off-policy:</b> using a different policy for acting (inference) and updating (training).
+</pre>
