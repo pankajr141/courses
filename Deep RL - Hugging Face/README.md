@@ -12,7 +12,14 @@ Below link contains the location where all model build using this repo are store
 
 # Notebooks
 
-* [Unit 1 - Introduction to Deep Reinforcement Learning](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit1/unit1.ipynb)
+* [Unit 1 - Introduction to Deep Reinforcement Learning](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit1/unit1.ipynb) \
+Initial Unit to interact with gymnasium env ang train a PPO model using stablebaseline3
 > <b>Env -</b> [LunarLander-v2](https://gymnasium.farama.org/environments/box2d/lunar_lander/) [gymnasium] \
 > <b>Lib -</b> [stable_baselines3](https://stable-baselines3.readthedocs.io/en/master/index.html) \
 > <b>Algo -</b> [PPO](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html)
+
+* [Unit 1 Bonus - Introduction to Deep Reinforcement Learning with Huggy](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit1_bonus.ipynb) \
+Bonus unit where we interact with Unity based Env and train RL model using PPO
+> <b>Env -</b> [Huggy](https://github.com/huggingface/Huggy) [Unity] \
+> <b>Lib -</b> [MLAgents](https://github.com/Unity-Technologies/ml-agents) \
+> <b>Algo -</b> PPO
