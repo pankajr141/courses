@@ -12,7 +12,7 @@ Below link contains the location where all model build using this repo are store
 
 # Notebooks
 
-* [Unit 1](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit1/unit1.ipynb)
+* [Unit 1 - Introduction to Deep Reinforcement Learning](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit1/unit1.ipynb)
 > <b>Env -</b> [LunarLander-v2](https://gymnasium.farama.org/environments/box2d/lunar_lander/) [gymnasium] \
 > <b>Lib -</b> [stable_baselines3](https://stable-baselines3.readthedocs.io/en/master/index.html) \
 > <b>Algo -</b> [PPO](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html)
