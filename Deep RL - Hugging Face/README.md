@@ -33,7 +33,7 @@ Trains a Q-function, an action-value function encoded, in internal memory, by a 
 <b>TD approach:</b> updates its action-value function at each step instead of at the end of the episode.'
 <b>Off-policy:</b> using a different policy for acting (inference) and updating (training).
 </pre>
-> <b>Env -</b> [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) & [Taxi-v3](https://gymnasium.farama.org/environments/toy_text/taxi/) [gymnasium] \
+> <b>Env -</b> [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/), [Taxi-v3](https://gymnasium.farama.org/environments/toy_text/taxi/)\
 > <b>Env-Lib -</b> [gymnasium](https://gymnasium.farama.org/) \
 > <b>RL-Algo -</b> Q-Learning - Value based\
 > <b>RL-Lib -</b> python and numpy
