@@ -37,3 +37,10 @@ Trains a Q-function, an action-value function encoded, in internal memory, by a 
 > <b>Env-Lib -</b> [gymnasium](https://gymnasium.farama.org/) \
 > <b>RL-Algo -</b> Q-Learning \
 > <b>RL-Lib -</b> python and numpy
+
+* [Unit 3 - Deep Q-Learning with Atari Games](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit3.ipynb) \
+Trains a DQN model, uses Experiance Replay Buffer, Fixed Q Target uses 2 models, Double DQN i.e model 1 for action estimation and 2 for estimating value for corresponding action.
+> <b>Env -</b> [SpaceInvadersNoFrameskip-v4](https://ale.farama.org/environments/space_invaders/) [gymnasium] \
+> <b>Env-Lib -</b> [gymnasium](https://gymnasium.farama.org/) \
+> <b>RL-Algo -</b> DQN \
+> <b>RL-Lib -</b> [rl-baselines-zoo](https://github.com/DLR-RM/rl-baselines3-zoo) - wrapper on top of stable_baselines3
