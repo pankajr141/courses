@@ -40,6 +40,13 @@ Trains a Q-function, an action-value function encoded, in internal memory, by a 
 
 * [Unit 3 - Deep Q-Learning with Atari Games](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit3.ipynb) \
 Trains a DQN model, uses Experiance Replay Buffer, Fixed Q Target uses 2 models, Double DQN i.e model 1 for action estimation and 2 for estimating value for corresponding action.
+<pre>
+<b>Experience Replay:</b> replay buffer to store previous episodes for retraining
+<b>Fixed Q-Target:</b> separate N/W for Q-Target and Q-value, to avoid issue of chasing a moving target.
+<b>Double DQN:</b> handle overestimation of Q values. This solution uses two networks to decouple the action selection from the target Value generation.
+    <b>DQN Network</b> to select the best action to take for the next state (the action with the highest Q-Value)
+    <b>Target Network</b> to calculate the target Q-Value of taking that action at the next state. This approach reduces the Q-Values overestimation, it helps to train faster and have more stable learning.
+</pre>
 > <b>Env -</b> [SpaceInvadersNoFrameskip-v4](https://ale.farama.org/environments/space_invaders/) [gymnasium] \
 > <b>Env-Lib -</b> [gymnasium](https://gymnasium.farama.org/) \
 > <b>RL-Algo -</b> DQN \
