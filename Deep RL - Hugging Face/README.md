@@ -56,10 +56,6 @@ Trains a DQN model, uses Experiance Replay Buffer, Fixed Q Target uses 2 models,
 Trains a DQN model, uses Experiance Replay Buffer, Fixed Q Target uses 2 models, Double DQN i.e model 1 for action estimation and 2 for estimating value for corresponding action.
 <pre>
 <b>Policy Based</b> directly learb from optimal policy without learning value function
-<b>Fixed Q-Target:</b> separate N/W for Q-Target and Q-value, to avoid issue of chasing a moving target.
-<b>Double DQN:</b> handle overestimation of Q values. This solution uses two networks to decouple the action selection from the target Value generation.
-    <b>DQN Network</b> to select the best action to take for the next state (the action with the highest Q-Value)
-    <b>Target Network</b> to calculate the target Q-Value of taking that action at the next state. This approach reduces the Q-Values overestimation, it helps to train faster and have more stable learning.
 </pre>
 > <b>Env -</b> [CartPole-v1](https://www.gymlibrary.dev/environments/classic_control/cart_pole/), [Pixelcopter-PLE-v0](https://pygame-learning-environment.readthedocs.io/en/latest/user/games/pixelcopter.html) \
 > <b>Env-Lib -</b> [gymnasium](https://gymnasium.farama.org/) \
