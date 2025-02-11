@@ -35,7 +35,7 @@ Trains a Q-function, an action-value function encoded, in internal memory, by a 
 </pre>
 > <b>Env -</b> [FrozenLake-v1](https://gymnasium.farama.org/environments/toy_text/frozen_lake/) & [Taxi-v3](https://gymnasium.farama.org/environments/toy_text/taxi/) [gymnasium] \
 > <b>Env-Lib -</b> [gymnasium](https://gymnasium.farama.org/) \
-> <b>RL-Algo -</b> Q-Learning \
+> <b>RL-Algo -</b> Q-Learning - Value based\
 > <b>RL-Lib -</b> python and numpy
 
 * [Unit 3 - Deep Q-Learning with Atari Games](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit3.ipynb) \
@@ -49,5 +49,19 @@ Trains a DQN model, uses Experiance Replay Buffer, Fixed Q Target uses 2 models,
 </pre>
 > <b>Env -</b> [SpaceInvadersNoFrameskip-v4](https://ale.farama.org/environments/space_invaders/) [gymnasium] \
 > <b>Env-Lib -</b> [gymnasium](https://gymnasium.farama.org/) \
-> <b>RL-Algo -</b> DQN \
+> <b>RL-Algo -</b> DQN - Value based\
 > <b>RL-Lib -</b> [rl-baselines-zoo](https://github.com/DLR-RM/rl-baselines3-zoo) - wrapper on top of stable_baselines3
+
+* [Unit 4 - Policy Gradient with PyTorch](https://nbviewer.org/github/pankajr141/courses/blob/main/Deep%20RL%20-%20Hugging%20Face/notebooks/unit4.ipynb) \
+Trains a DQN model, uses Experiance Replay Buffer, Fixed Q Target uses 2 models, Double DQN i.e model 1 for action estimation and 2 for estimating value for corresponding action.
+<pre>
+<b>Policy Based</b> directly learb from optimal policy without learning value function
+<b>Fixed Q-Target:</b> separate N/W for Q-Target and Q-value, to avoid issue of chasing a moving target.
+<b>Double DQN:</b> handle overestimation of Q values. This solution uses two networks to decouple the action selection from the target Value generation.
+    <b>DQN Network</b> to select the best action to take for the next state (the action with the highest Q-Value)
+    <b>Target Network</b> to calculate the target Q-Value of taking that action at the next state. This approach reduces the Q-Values overestimation, it helps to train faster and have more stable learning.
+</pre>
+> <b>Env -</b> [CartPole-v1](https://www.gymlibrary.dev/environments/classic_control/cart_pole/), [Pixelcopter-PLE-v0](https://pygame-learning-environment.readthedocs.io/en/latest/user/games/pixelcopter.html) \
+> <b>Env-Lib -</b> [gymnasium](https://gymnasium.farama.org/) \
+> <b>RL-Algo -</b> Monte Carlo Reinforce - Policy based \
+> <b>RL-Lib -</b> Pytorch - Custom implementation
