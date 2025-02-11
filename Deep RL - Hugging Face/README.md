@@ -47,7 +47,7 @@ Trains a DQN model, uses Experiance Replay Buffer, Fixed Q Target uses 2 models,
     <b>DQN Network</b> to select the best action to take for the next state (the action with the highest Q-Value)
     <b>Target Network</b> to calculate the target Q-Value of taking that action at the next state. This approach reduces the Q-Values overestimation, it helps to train faster and have more stable learning.
 </pre>
-> <b>Env -</b> [SpaceInvadersNoFrameskip-v4](https://ale.farama.org/environments/space_invaders/) [gymnasium] \
+> <b>Env -</b> [SpaceInvadersNoFrameskip-v4](https://ale.farama.org/environments/space_invaders/) \
 > <b>Env-Lib -</b> [gymnasium](https://gymnasium.farama.org/) \
 > <b>RL-Algo -</b> DQN - Value based\
 > <b>RL-Lib -</b> [rl-baselines-zoo](https://github.com/DLR-RM/rl-baselines3-zoo) - wrapper on top of stable_baselines3
